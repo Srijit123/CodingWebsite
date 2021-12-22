@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 43%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+   
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 36px;
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Denk One'
+    
+}
+
+.nav-list li a:hover{
+    color: grey;
+    
+}
+
+
+.rightNav{
+
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/img_1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 50%;
+    height: 80%;
+
+
+}
+.firstHalf{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 70%;
+    padding: 4px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 16px;
+    font-family: 'Denk One', sans-serif;
+
+}
+.text-small{
+    font-size: 40px;
+    font-family: 'Denk One', sans-serif;
+
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 18px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Denk One', sans-serif;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 15px;
+    
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    
+}
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Denk One', sans-serif;
+    background: rgba(249, 250, 250, 0.7) ;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+    
+}
+.paras{
+    padding: 59px 98px;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionSubTag{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.thumbnail img{
+    width: 293px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 19px;
+}
+.video{
+    height: 833px;
+}
+.text-center{
+    text-align: center ;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    
+}
+.form{
+    padding-top: 1px;
+    max-width: 1200px;
+    margin: auto;
+    color: black;
+  
+}
+.form-input{
+    border: 2px solid black;
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 19px;
+    border-radius: 6px;
+    font-family: 'Denk One', sans-serif;  
+}
+.text-footer{
+    text-align: center;
+    padding : 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color:white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1028px){
+    .nav-list{
+        flex-direction: column
+    }
+    
+    .navbar{
+        height: 478px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    
+    .burger{
+        display: block;
+
+    } 
+    
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+
